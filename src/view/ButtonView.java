@@ -50,6 +50,7 @@ public class ButtonView extends JPanel implements OurObserver {
     Font myFont = new Font("Arial", Font.TRUETYPE_FONT, 40);
     ButtonListener buttonListener = new ButtonListener();
     buttons = new JButton[size][size];
+    
     for (int i = 0; i < size; i++) {
       for (int j = 0; j < size; j++) {
         buttons[i][j] = new JButton();

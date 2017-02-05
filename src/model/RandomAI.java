@@ -18,8 +18,11 @@ public class RandomAI implements TicTacToeStrategy {
 
   @Override
   public Point desiredMove(TicTacToeGame theGame) {
- 
- 
-    return new Point(2,2);
+	  int r, c;
+	  do{
+		  r = (int) (Math.random()*(theGame.size()));
+		  c = (int) (Math.random()*theGame.size());
+	  }while(!theGame.available(r, c));
+    return new Point(r,c);
   }
 }
