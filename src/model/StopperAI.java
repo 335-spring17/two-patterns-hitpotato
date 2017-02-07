@@ -1,5 +1,9 @@
 package model;
 
+/* File: StopperAI.java
+ * Author: Long Chen
+ * Purpose: an advanced AI compared to RandomAI.
+ */
 import java.awt.Point;
 import java.util.Random;
 

@@ -1,5 +1,8 @@
 package view;
-
+/* File: TextFieldView.java
+ * Author: Long Chen
+ * Purpose: Provide textfield view, used for swapping between ButtonView and TextFieldView.
+ */
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;

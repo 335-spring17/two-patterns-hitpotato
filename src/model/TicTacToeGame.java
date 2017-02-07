@@ -1,5 +1,8 @@
 package model;
-
+/* File: TicTacToeGame.java
+ * Author: Long Chen
+ * Purpose: Provide the functionality for TicTacGame
+ */
 import controller.OurObservable;
 
 public class TicTacToeGame extends OurObservable {

@@ -7,7 +7,7 @@ import java.awt.Point;
  * 
  * @throws IGotNowhereToGoException whenever asked for a move that is impossible to deliver
  * 
- * @author mercer
+ * @author mercer, Long Chen
  */
 
 // There is an intentional compile time error.  Implement this interface

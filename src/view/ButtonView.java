@@ -1,5 +1,8 @@
 package view;
-
+/* File: ButtonView.java
+ * Author: Long Chen
+ * Purpose: Provide button view, used for swapping between ButtonView and TextFieldView.
+ */
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.GridLayout;

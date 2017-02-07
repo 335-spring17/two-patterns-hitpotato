@@ -32,7 +32,7 @@ import view.TextFieldView;
  * 
  * You can also select two different strategies to play against from the menus
  * 
- * @author mercer
+ * @author mercer, Long Chen
  */
 public class TicTacToeGUI extends JFrame {
 
