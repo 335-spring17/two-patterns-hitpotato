@@ -20,6 +20,8 @@ public class RandomAI implements TicTacToeStrategy {
   public Point desiredMove(TicTacToeGame theGame) {
 	  int r, c;
 	  do{
+		  if(theGame.maxMovesRemaining() == 0)
+				throw new IGotNowhereToGoException(null);
 		  r = (int) (Math.random()*(theGame.size()));
 		  c = (int) (Math.random()*theGame.size());
 	  }while(!theGame.available(r, c));

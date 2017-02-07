@@ -16,7 +16,8 @@ public class StopperAI implements TicTacToeStrategy {
 	public Point desiredMove(TicTacToeGame theGame) {
 
 		// If the AI can not block, look for a win
-
+		if (theGame.maxMovesRemaining() == 0)
+			throw new IGotNowhereToGoException(null);
 		if (aboutWinByRow(theGame, 'O') != null)
 			return aboutWinByRow(theGame, 'O');
 
@@ -45,9 +46,9 @@ public class StopperAI implements TicTacToeStrategy {
 		} while (!theGame.available(r, c));
 
 		return new Point(r, c);
-		// return null;
 	}
 
+	// Find next move to win by row
 	private Point aboutWinByRow(TicTacToeGame theGame, char nextChar) {
 		char[][] board = theGame.getTicTacToeBoard();
 		int r = 0, c = 0, rowSum = 0;
@@ -69,6 +70,7 @@ public class StopperAI implements TicTacToeStrategy {
 		return null;
 	}
 
+	// Find next move to win by column.
 	private Point aboutWinByCol(TicTacToeGame theGame, char nextChar) {
 		char[][] board = theGame.getTicTacToeBoard();
 		int r = 0, c = 0, colSum = 0;
@@ -89,6 +91,7 @@ public class StopperAI implements TicTacToeStrategy {
 		return null;
 	}
 
+	// Find next move to win by Diagonal
 	private Point aboutWinByDiagonal(TicTacToeGame theGame, char nextChar) {
 		// Check Diagonal from upper left to lower right
 		char[][] board = theGame.getTicTacToeBoard();
